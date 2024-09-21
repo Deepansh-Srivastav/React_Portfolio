@@ -2,9 +2,41 @@
     background-color: #614bc3;
 }
 
-.custom_navbar .nav-link,
 .custom_navbar .navbar-brand,
-.custom_navbar .dropdown-toggle {
+.custom_navbar .dropdown-toggle,
+.clr_white {
     color: #FFFFFF !important;
-    /* Forces the text color to white */
+    text-decoration: none;
+}
+
+.active {
+    color: rgb(248, 248, 78) !important;
+}
+
+.download_btn{
+
+    background-color: #9683e0;
+    /* Change to your desired color */
+    color: white;
+    /* Text color */
+    border: none;
+    /* No border */
+    padding: 10px 20px;
+    /* Padding for size */
+    border-radius: 50px;
+    /* Rounded edges */
+    transition: background-color 0.3s, transform 0.3s;
+    /* Smooth transition */
+    cursor: pointer;
+    /* Pointer on hover */
+}
+
+.download_btn svg{
+    color: white;
+    font-size: ;
+}
+
+.download_btn:hover{
+    background-color: #4a3a8c; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly grow on hover */
 }
