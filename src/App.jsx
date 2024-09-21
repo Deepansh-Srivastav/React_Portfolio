@@ -1,9 +1,10 @@
+import Header from "./components/Header"
+import "./styles/App.css"
 
 const App = () => {
-  return (
-    <div>
-      
-    </div>
+  return (<>
+    <Header />
+  </>
   )
 }
 

@@ -1,0 +1,10 @@
+.clr_purple {
+    background-color: #614bc3;
+}
+
+.custom_navbar .nav-link,
+.custom_navbar .navbar-brand,
+.custom_navbar .dropdown-toggle {
+    color: #FFFFFF !important;
+    /* Forces the text color to white */
+}
