@@ -1,4 +1,4 @@
-import Header from "./components/Header"
+import Header from "./common/Header"
 import RouterComponent from "./routes/RouterComponent"
 import "./styles/App.css"
 

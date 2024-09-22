@@ -1,18 +1,17 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import "../styles/Header.css"
 import { NavLink } from 'react-router-dom';
 import { MdOutlineFileDownload } from "react-icons/md";
-
+import portfolioLogo from "../assets/Logos/portfolioLogo.png"
 
 const Header = () => {
     return (
 
         <Navbar expand="lg" className="px-5 clr_purple custom_navbar">
             <Container fluid>
-                <Navbar.Brand href="#">Portfolio</Navbar.Brand>
+                <NavLink to="/" ><img src={portfolioLogo} alt="Portfolio Icon" className=''/></NavLink>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -42,12 +41,26 @@ const Header = () => {
                             Education
                         </NavLink>
 
-                        <NavDropdown title="Link" id="navbarScrollingDropdown" className="mx-4">
+                        <NavLink
+                            to="/education"
+                            className={({ isActive }) => (isActive ? 'mx-5 clr_white active' : 'mx-5 clr_white')}
+                        >
+                            Skills
+                        </NavLink>
+
+                        <NavLink
+                            to="/education"
+                            className={({ isActive }) => (isActive ? 'mx-5 clr_white active' : 'mx-5 clr_white')}
+                        >
+                            Experience
+                        </NavLink>
+
+                        {/* <NavDropdown title="Link" id="navbarScrollingDropdown" className="mx-4">
                             <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                             <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
-                        </NavDropdown>
+                        </NavDropdown> */}
 
                     </Nav>
 
@@ -57,7 +70,8 @@ const Header = () => {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-    )
+
+)
 }
 
 export default Header
