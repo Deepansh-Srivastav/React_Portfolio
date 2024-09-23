@@ -27,7 +27,6 @@ const ProjectDisplay = () => {
     return (
         <>
             <div className="custom_margin_extra">
-
                 <Heading_Type_2 {...projectHeading} />
             </div>
 
