@@ -1,10 +1,11 @@
 .about_section img {
     width: 80%;
     max-width: 400px;
+    border-radius: 10px;
+    border: 2px solid white;
 }
 
 .about_section {
-
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(10px);
@@ -14,27 +15,6 @@
     margin-top: 100px !important;
     width: 98%;
     max-width: 1500px;
-}
-
-.heading_type_1 h3 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: cyan;
-    margin-bottom: 0;
-
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: bold;
-    font-style: normal;
-}
-
-.heading_type_1 span {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: rgb(188, 247, 247);
-
-    font-family: "Permanent Marker", cursive;
-    font-weight: bold;
-    font-style: normal;
 }
 
 .general_text {
@@ -50,37 +30,4 @@
 
 .heading_type_1 {
     margin-bottom: 30px;
-}
-
-/* Responsive styling */
-@media (max-width: 768px) {
-    .heading_type_1 h3 {
-        font-size: 2rem;
-        /* Adjust heading for smaller screens */
-    }
-
-    .heading_type_1 span {
-        font-size: 1.2rem;
-        /* Adjust subheading for smaller screens */
-    }
-
-    .general_text p {
-        font-size: 1rem;
-        /* Adjust paragraph text size for smaller screens */
-    }
-}
-
-@media (max-width: 576px) {
-    .heading_type_1 h3 {
-        font-size: 1.8rem;
-        /* Further adjustments for very small screens */
-    }
-
-    .heading_type_1 span {
-        font-size: 1rem;
-    }
-
-    .general_text p {
-        font-size: 0.9rem;
-    }
 }

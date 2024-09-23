@@ -16,6 +16,10 @@
     max-width: 200px;
     pointer-events: none;
 } 
+.custom_margin{
+    margin-top: 5rem !important;
+    margin-bottom: 3rem !important;
+}
 
 .hero_section h2 {
     font-size: clamp(1rem, 1.5vw + 1rem, 2rem); 

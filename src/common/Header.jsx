@@ -9,7 +9,7 @@ import portfolioLogo from "../assets/Logos/portfolioLogo.png"
 const Header = () => {
     return (
 
-        <Navbar expand="lg" className="px-5 clr_purple custom_navbar">
+        <Navbar expand="lg" className="px-5 clr_purple custom_navbar" data-aos = "fade-down">
             <Container fluid>
                 <NavLink to="/" ><img src={portfolioLogo} alt="Portfolio Icon" className=''/></NavLink>
                 <Navbar.Toggle aria-controls="navbarScroll" />
@@ -54,23 +54,14 @@ const Header = () => {
                         >
                             Experience
                         </NavLink>
-
-                        {/* <NavDropdown title="Link" id="navbarScrollingDropdown" className="mx-4">
-                            <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
-                        </NavDropdown> */}
-
                     </Nav>
 
                     <a className="d-flex justify-content-center align-items-center download_btn" href='../assets/Resume/Deepansh_Srivastav Resume.pdf'
-                    download="Deepansh_Srivastav Resume.pdf">Download Resume <MdOutlineFileDownload className='mx-1'/></a>
+                    download="Deepansh_Srivastav Resume.pdf">Resume <MdOutlineFileDownload className='mx-1'/></a>
 
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-
 )
 }
 

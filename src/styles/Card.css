@@ -1,0 +1,32 @@
+.custom_card {
+    background-color: #614bc362; /* Background color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: background-color 1s; 
+    cursor: pointer;
+}
+
+.custom_card:hover{
+    background-color: #7961c381;
+    transition: back 0.4s;
+}
+
+.custom_button {
+    display: inline-block; /* Inline block for spacing */
+    background-color: #9683e0; /* Background color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border: none; /* Remove default border */
+    border-radius: 25px; /* Semi-circle effect */
+    text-decoration: none; /* Remove underline */
+    font-size: 12px; /* Font size */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    margin: 5px; /* Space between buttons */
+}
+
+.custom_button:hover {
+    background-color: #7a66c6; /* Darker shade on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}

@@ -1,0 +1,101 @@
+.custom_margin {
+    margin-top: 5rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.custom_margin_extra{
+    margin-top: 8rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.heading_type_1 h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: cyan;
+    margin-bottom: 0;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.heading_type_1 span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #bcf7f7;
+
+    font-family: "Permanent Marker", cursive;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.heading_type_2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading_type_2 h3 {
+
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: cyan;
+    margin-bottom: 0;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.heading_type_2 span {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(188, 247, 247);
+
+    font-family: "Permanent Marker", cursive;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.active_tab_button {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+
+    .heading_type_1 h3,
+    .heading_type_2 h3 {
+        font-size: 2rem;
+        /* Adjust heading for smaller screens */
+    }
+
+    .heading_type_1 span,
+    .heading_type_2 span {
+        font-size: 1.2rem;
+        /* Adjust subheading for smaller screens */
+    }
+
+    .general_text p {
+        font-size: 1rem;
+        /* Adjust paragraph text size for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .heading_type_1 h3 {
+        font-size: 1.8rem;
+        /* Further adjustments for very small screens */
+    }
+
+    .heading_type_1 span {
+        font-size: 1rem;
+    }
+
+    .general_text p {
+        font-size: 0.9rem;
+    }
+}
