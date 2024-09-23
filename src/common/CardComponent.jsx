@@ -7,23 +7,26 @@ export default function CardComponent({
   image,
   github,
   visit,
-  route
+  route,
+  tech
 }) {
 
   return (
     <Card style={{ width: '18rem' }} className='custom_card' data-aos="fade-down">
-      <Card.Img variant="top"  src={image} />
+      <Card.Img variant="top" src={image} />
       <Card.Body>
-        <Card.Title className='my-3' style={{ color: '#bcf7f7', fontWeight:"bold" }}
+        <Card.Title className='my-3' style={{ color: '#bcf7f7', fontWeight: "bold" }}
         >{title}</Card.Title>
         <Card.Text>
           {shortDescription}
         </Card.Text>
       </Card.Body>
 
-      <Card.Body>
-        
-        <p>Tech- </p>
+      <Card.Body className='d-flex justify-content-start align-items-center w-100'>
+
+        <p style={{ margin: " 0 10px 0 0" }}>Tech- </p>
+
+        <TechBadges tech={tech} />
 
       </Card.Body>
 
@@ -40,9 +43,17 @@ export default function CardComponent({
 }
 
 
-function TechBadge(){
-  return(
-    <div className=''>
+function TechBadges({ tech }) {
+  return (
+    <div className="d-flex justify-content-start align-items-center flex-row w-100">
+
+      {tech.map((technology) => {
+        return (
+          <div style={{ maxWidth: "28px", marginRight:"10px" }} key={technology}>
+            <img src={technology} alt="Image" className='w-100' />
+          </div>
+        )
+      })}
 
     </div>
   )
