@@ -15,11 +15,10 @@ export default function CardComponent({
   visit,
   route,
   techLogos,
-  slideTimer,
 }) {
   return (
     <Card style={{ width: '18rem', height:"469px", margin:"20px 10px" }} className='custom_card' data-aos="fade-down">
-      <Thumbnail images={images} slideTimer={slideTimer} />
+      <Thumbnail images={images} />
       <Card.Body>
         <Card.Title className='my-3' style={{ color: '#bcf7f7', fontWeight: "bold" }}
         >{title}</Card.Title>

@@ -1,7 +1,8 @@
 // Zomato Project Image Import 
-import zomato from "../assets/Project_Images/Zomato/zomato.png"
+import zomato from "../assets/Project_Images/Zomato/zomato1.png"
 import zomato2 from "../assets/Project_Images/Zomato/zomato2.png"
 import zomato3 from "../assets/Project_Images/Zomato/zomato3.png"
+import zomato4 from "../assets/Project_Images/Zomato/zomato4.png"
 
 // ZomCafeato Project Image Import 
 import Cafe from "../assets/Project_Images/Cafe/cafe1.png"
@@ -31,7 +32,7 @@ const projectsData = [
 
         shortDescription: 'This is a fully responsive clone of the landing page of Zomato. It supports both Hindi and English languages for a wider audience.',
 
-        images: [zomato, zomato2, zomato3],
+        images: [zomato, zomato2, zomato4, zomato3],
 
         category: 'HTML',
 
@@ -42,8 +43,6 @@ const projectsData = [
         link: "/project/zomato_landing_page",
 
         techLogos: [html, css, js],
-
-        slideTimer: 5000,
 
     },
     {
@@ -67,8 +66,6 @@ const projectsData = [
 
         techLogos: [html, css, js, bs],
 
-        slideTimer: 5000,
-
     },
     {
         id: 2,
@@ -90,8 +87,6 @@ const projectsData = [
         link: "/project/zomato_landing_page",
 
         techLogos: [html, css, js],
-
-        slideTimer: 5000,
 
     },
 ]
