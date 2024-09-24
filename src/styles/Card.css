@@ -4,13 +4,13 @@
     border: none; /* No border */
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-    transition: background-color 1s; 
+    transition: background-color 1s;
     cursor: pointer;
 }
 
 .custom_card:hover{
     background-color: #7961c381;
-    transition: back 0.4s;
+    scale: 1.01;
 }
 
 .custom_button {

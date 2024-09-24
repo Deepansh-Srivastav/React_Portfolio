@@ -1,10 +1,11 @@
 import Card from 'react-bootstrap/Card';
 import "../styles/Card.css"
+import PropTypes from 'prop-types';
 
 // FOR SWIPER
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Autoplay} from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 
 
 export default function CardComponent({
@@ -13,11 +14,10 @@ export default function CardComponent({
   images,
   github,
   visit,
-  route,
   techLogos,
 }) {
   return (
-    <Card style={{ width: '18rem', height:"469px", margin:"20px 10px" }} className='custom_card' data-aos="fade-down">
+    <Card style={{ width: '18rem', height: "469px", margin: "20px 10px" }} className='custom_card' data-aos="fade-down">
       <Thumbnail images={images} />
       <Card.Body>
         <Card.Title className='my-3' style={{ color: '#bcf7f7', fontWeight: "bold" }}
@@ -75,15 +75,15 @@ function Thumbnail({ images }) {
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
-        autoplay={{
-          delay: 3000,
-          disableOnInteraction: false,
-        }}
-
+        autoplay={
+          {
+            delay: 3000,
+            disableOnInteraction: false,
+          }
+        }
         modules={[Autoplay]}
         className="mySwiper"
-        style={{ maxWidth: "288px" }}
-      >
+        style={{ maxWidth: "288px" }}>
 
         {images.map((image) => {
           key++
@@ -91,13 +91,25 @@ function Thumbnail({ images }) {
             <SwiperSlide key={key}><Card.Img variant="top" src={image} /></SwiperSlide>
           )
         })}
-
-
-
       </Swiper>
-
     </>
   );
 }
 
+CardComponent.propTypes = {
+  title: PropTypes.string.isRequired,
+  shortDescription: PropTypes.string.isRequired,
+  images: PropTypes.array.isRequired,
+  github: PropTypes.string.isRequired,
+  visit: PropTypes.string.isRequired,
+  route: PropTypes.string,
+  techLogos: PropTypes.array.isRequired,
+}
 
+TechBadges.propTypes = {
+  tech: PropTypes.array.isRequired
+}
+
+Thumbnail.propTypes = {
+  images: PropTypes.array.isRequired,
+};
