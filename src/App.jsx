@@ -3,6 +3,7 @@ import RouterComponent from "./routes/RouterComponent"
 import "./styles/App.css"
 import { useEffect } from "react"
 import Aos from "aos"
+import Footer from "./common/Footer"
 
 const App = () => {
 
@@ -11,10 +12,10 @@ const App = () => {
       duration: 1000
     })
   })
-
   return (<>
     <Header />
     <RouterComponent />
+    <Footer/>
   </>
   )
 }

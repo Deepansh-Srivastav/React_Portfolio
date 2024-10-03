@@ -4,7 +4,7 @@
     border-radius: 40px;
     position: relative;
     overflow: hidden;
-    min-width: 500px;
+    min-width: 350px;
 }
 
 .tabination_navbar:before,
@@ -55,7 +55,9 @@
 }
 
 .project_navbar_container {
-    padding: 0 0 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project_cards_section {
@@ -66,3 +68,19 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
+
+
+@media (max-width: 380px) {
+    .tabination_navbar {
+        min-width: 280px; /* Adjust the width */
+    }
+
+    .tabination_navbar a {
+        font-size: 14px; /* Make the text smaller */
+    }
+}
+
+/* 
+GRADIENT 
+background: linear-gradient(124.99deg, #4a58ec 13.91%, #fbbc00 127.5%); */

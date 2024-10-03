@@ -21,7 +21,6 @@ const ProjectDisplay = () => {
         })
 
         setFilteredProjects(filteredArray)
-
     };
 
     return (
@@ -30,11 +29,12 @@ const ProjectDisplay = () => {
                 <Heading_Type_2 {...projectHeading} />
             </div>
 
-            <section className="d-flex justify-content-center align-items-center flex-column tabination_container py-5 px-2">
+            <section className="d-flex justify-content-center align-items-center flex-column tabination_container py-5 ">
 
-                <div className="project_navbar_container w-75">
+                <div className="project_navbar_container w-50">
 
                     <nav className="d-flex justify-content-around align-items-center tabination_navbar w-50" data-aos="fade-down">
+
                         <a
                             href="#"
                             className={activeIndex === 0 ? 'active active_tab_button' : ''}
@@ -42,33 +42,29 @@ const ProjectDisplay = () => {
                         >
                             All
                         </a>
-                        <a
-                            href="#"
-                            className={activeIndex === 1 ? 'active active_tab_button' : ''}
-                            onClick={() => handleClick(1, 'HTML')}
-                        >
-                            Web Dev
-                        </a>
-                        <a
-                            href="#"
-                            className={activeIndex === 2 ? 'active active_tab_button' : ''}
-                            onClick={() => handleClick(2, 'React_Tailwind')}
-                        >
-                            Tailwind REACT
-                        </a>
-                        <a
-                            href="#"
-                            className={activeIndex === 3 ? 'active active_tab_button' : ''}
-                            onClick={() => handleClick(3, 'React_Bootstrap')}
-                        >
-                            Bootstrap REACT
-                        </a>
+
                         <a
                             href="#"
                             className={activeIndex === 4 ? 'active active_tab_button' : ''}
                             onClick={() => handleClick(4, 'MERN')}
                         >
                             MERN
+                        </a>
+
+                        <a
+                            href="#"
+                            className={activeIndex === 2 ? 'active active_tab_button' : ''}
+                            onClick={() => handleClick(2, 'REACT')}
+                        >
+                            REACT
+                        </a>
+
+                        <a
+                            href="#"
+                            className={activeIndex === 1 ? 'active active_tab_button' : ''}
+                            onClick={() => handleClick(1, 'HTML')}
+                        >
+                            VANILLA
                         </a>
                     </nav>
 
@@ -88,8 +84,3 @@ const ProjectDisplay = () => {
 }
 
 export default ProjectDisplay
-
-
-
-
-{/* <div className="d-flex justify-content-center align-items-center flex-column w-100"></div> */ }
