@@ -15,7 +15,7 @@ const App = () => {
   return (<>
     <Header />
     <RouterComponent />
-    <Footer/>
+    {/* <Footer/> */}
   </>
   )
 }
