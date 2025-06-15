@@ -1,6 +1,6 @@
-import About from "../components/About"
-import Hero from "../components/Hero"
-
+import About from "../components/About";
+import Hero from "../components/Hero";
+import "aos/dist/aos.css";
 
 const Home = () => {
 
@@ -9,11 +9,10 @@ const Home = () => {
 
       <Hero />
 
-      <About />
-      
-    </main>
-  )
-  
-}
+      <About data-aos="fade-right" />
 
-export default Home
+    </main>
+  );
+};
+
+export default Home;

@@ -8,7 +8,6 @@ import portfolioLogo from "../assets/Logos/portfolioLogo.png"
 
 const Header = () => {
     return (
-
         <Navbar expand="lg" className="px-5 clr_purple custom_navbar" data-aos = "fade-down">
             <Container fluid>
                 <NavLink to="/" ><img src={portfolioLogo} alt="Portfolio Icon" className=''/></NavLink>
@@ -41,12 +40,12 @@ const Header = () => {
                             Education
                         </NavLink>
 
-                        <NavLink
+                        {/* <NavLink
                             to="/education"
                             className={({ isActive }) => (isActive ? 'mx-5 clr_white active' : 'mx-5 clr_white')}
                         >
                             Skills
-                        </NavLink>
+                        </NavLink> */}
 
                         <NavLink
                             to="/education"
@@ -62,7 +61,7 @@ const Header = () => {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-)
-}
+);
+};
 
-export default Header
+export default Header;

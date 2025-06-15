@@ -1,8 +1,8 @@
-import "../styles/About.css"
-import aboutImage from "../assets/Images/aboutImage.jpg"
-import { aboutSectionHeadingData } from "../data/homePageData"
-import Heading_Type_1 from "../common/Heading_Type_1"
-import "aos/dist/aos.css"
+import "../styles/About.css";
+import aboutImage from "../assets/Images/aboutImage.jpg";
+import { aboutSectionHeadingData } from "../data/homePageData";
+import Heading_Type_1 from "../common/Heading_Type_1";
+import "aos/dist/aos.css";
 
 const About = () => {
 
@@ -27,7 +27,7 @@ const About = () => {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default About
+export default About;
