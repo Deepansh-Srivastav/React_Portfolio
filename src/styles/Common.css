@@ -10,11 +10,11 @@
     }
 
     15% {
-        transform: rotate(14deg);
+        transform: rotate(50deg);
     }
 
     30% {
-        transform: rotate(-8deg);
+        transform: rotate(-50deg);
     }
 
     40% {
@@ -22,11 +22,11 @@
     }
 
     50% {
-        transform: rotate(-4deg);
+        transform: rotate(-14deg);
     }
 
     60% {
-        transform: rotate(10deg);
+        transform: rotate(14deg);
     }
 
     70% {
