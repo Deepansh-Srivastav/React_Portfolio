@@ -1,32 +1,110 @@
-.custom_card {
-    background-color: #614bc362; /* Background color */
-    color: white; /* Text color */
-    border: none; /* No border */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Subtle shadow */
-    transition: background-color 1s;
-    cursor: pointer;
+.projectCard {
+    max-width: 390px;
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    padding: 6px;
+    border-radius: 6px;
+    margin-bottom: 100px;
+    position: relative;
+    /* background-color: red; */
+    
 }
 
-.custom_card:hover{
-    background-color: #7961c381;
-    scale: 1.01;
+.thumbnail {
+    width: 100%;
+    background-color: black;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 8px;
 }
 
-.custom_button {
-    display: inline-block; /* Inline block for spacing */
-    background-color: #9683e0; /* Background color */
-    color: white; /* Text color */
-    padding: 10px 20px; /* Padding */
-    border: none; /* Remove default border */
-    border-radius: 25px; /* Semi-circle effect */
-    text-decoration: none; /* Remove underline */
-    font-size: 12px; /* Font size */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
-    margin: 5px; /* Space between buttons */
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-top: 35px;
+
 }
 
-.custom_button:hover {
-    background-color: #7a66c6; /* Darker shade on hover */
-    transform: translateY(-3px); /* Lift effect on hover */
+
+.title {
+    margin: 0;
+    font-size: 26px;
+    font-weight: bold;
+    color: cyan;
+    /* color: #98CD00; */
+    /* color: #bcf7f7; */
+}
+
+.shortDescription {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #FFFADC;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.buttons button {
+    background: #ffffff10;
+    color: #FFFA8D;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+    border: 1px solid #FFFA8D;
+}
+
+.buttons button:hover {
+    background: #FFFA8D;
+    /* background: #bcf7f7; */
+    color: black;
+}
+
+
+
+
+.imageOverlayWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 6px;
+    /* Optional, matches your card styling */
+}
+
+.imageOverlayWrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Top & bottom gradient overlay */
+.imageOverlayWrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.6) 0%,
+            rgba(0, 0, 0, 0) 30%,
+            rgba(0, 0, 0, 0) 70%,
+            rgba(0, 0, 0, 0.4) 100%);
 }

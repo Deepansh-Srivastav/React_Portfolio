@@ -16,8 +16,9 @@ export default function CardComponent({
   visit,
   techLogos,
 }) {
+  
   return (
-    <Card style={{ width: '18rem', height: "469px", margin: "20px 10px" }} className='custom_card' data-aos="fade-down">
+    <Card style={{ width: '18rem', height: "469px", margin: "20px 10px" }} className='custom_card' data-aos="zoom-in">
       <Thumbnail images={images} />
       <Card.Body>
         <Card.Title className='my-3' style={{ color: '#bcf7f7', fontWeight: "bold" }}
@@ -47,7 +48,6 @@ export default function CardComponent({
   );
 }
 
-
 function TechBadges({ tech }) {
   return (
     <div className="d-flex justify-content-start align-items-center flex-row w-100">
@@ -63,8 +63,6 @@ function TechBadges({ tech }) {
     </div>
   )
 }
-
-
 
 function Thumbnail({ images }) {
 

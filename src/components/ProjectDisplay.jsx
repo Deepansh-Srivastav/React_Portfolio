@@ -3,6 +3,7 @@ import Heading_Type_2 from "../common/Heading_Type_2";
 import { projectHeading, projectsData } from "../data/projectsPageData";
 import "../styles/Projects.css"
 import { useState } from "react";
+import ProjectCard from "./ProjectCard";
 
 const ProjectDisplay = () => {
 
@@ -22,6 +23,9 @@ const ProjectDisplay = () => {
 
         setFilteredProjects(filteredArray)
     };
+
+    console.log(projectsData[0]);
+
 
     return (
         <>
@@ -73,7 +77,7 @@ const ProjectDisplay = () => {
                 <div className="project_cards_section my-5">
                     {
                         filteredProjects.map(project => {
-                            return <CardComponent {...project} key={project.id} />
+                            return <ProjectCard {...project} key={project.id} />
                         })
                     }
                 </div>

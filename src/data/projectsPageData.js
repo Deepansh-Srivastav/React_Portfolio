@@ -35,94 +35,54 @@ const projectHeading = {
 const projectsData = [
     {
         id: 1,
-
         title: "Investment Calculator",
-
-        description: "This is the Clone Web App of the Zomato Web Application. It is also Fully responsive in nature which means It can work perfectly on almost any device regardless of its dimensions and size. Each and every component on this webpage is inspired from the ZOMATO page and created by me.  It can be operated in 2 languages हिंदी and English.",
-
-        shortDescription: 'This is my official portfolio web app, fully responsive and compatible with devices of any size.',
-
+        description: "A React-based investment calculator that helps users estimate future returns. It features an intuitive UI and responsive design, making it user-friendly across all devices.",
+        shortDescription: "This is my official portfolio web app, fully responsive and compatible with devices of any size.",
         images: [Cafe, Cafe2, Cafe3, Cafe4, Cafe5],
-
         category: 'REACT',
-
         github: "https://github.com/Deepansh-Srivastav/Canteen-Website-Project",
-
         visit: "https://gauricafe.netlify.app/",
-
         link: "/project/zomato_landing_page",
-
-        techLogos: [react, css, bs, git ,azure],
-
+        techLogos: [react, css, bs, git, azure],
     },
     {
         id: 2,
-
         title: "Portfolio Website",
-
-        description: "This is the Clone Web App of the Zomato Web Application. It is also Fully responsive in nature which means It can work perfectly on almost any device regardless of its dimensions and size. Each and every component on this webpage is inspired from the ZOMATO page and created by me.  It can be operated in 2 languages हिंदी and English.",
-
-        shortDescription: 'This is a fully responsive clone of the landing page of Zomato. It supports both Hindi and English languages for a wider audience.',
-
+        description: "A personal portfolio website showcasing my projects, skills, and resume. It is fully responsive, cross-browser compatible, and built using HTML, CSS, and JavaScript.",
+        shortDescription: "This is a fully responsive clone of the landing page of Zomato. It supports both Hindi and English languages for a wider audience.",
         images: [pf, pf2, pf3, pf4],
-
         category: 'HTML',
-
         github: "https://github.com/Deepansh-Srivastav/My-Portfolio2.0",
-
         visit: "https://deepansh-srivastav.github.io/My-Portfolio2.0/",
-
         link: "/project/zomato_landing_page",
-
         techLogos: [html, css, js, git, github],
-
     },
     {
         id: 0,
-
         title: "Zomato Landing Page",
-
-        description: "This is the Clone Web App of the Zomato Web Application. It is also Fully responsive in nature which means It can work perfectly on almost any device regardless of its dimensions and size. Each and every component on this webpage is inspired from the ZOMATO page and created by me.  It can be operated in 2 languages हिंदी and English.",
-
-        shortDescription: 'This is a fully responsive clone of the landing page of Zomato. It supports both Hindi and English languages for a wider audience.',
-
+        description: "A fully responsive clone of Zomato’s landing page supporting English and Hindi. Designed to work seamlessly on all devices with attention to design and structure.",
+        shortDescription: "This is a fully responsive clone of the landing page of Zomato. It supports both Hindi and English languages for a wider audience.",
         images: [zomato, zomato2, zomato4, zomato3],
-
         category: 'HTML',
-
         github: "https://github.com/Deepansh-Srivastav/Responsive-Zomato-Clone",
-
         visit: "https://deepansh-srivastav.github.io/Responsive-Zomato-Clone/",
-
         link: "/project/zomato_landing_page",
-
         techLogos: [html, css, js, git, github],
-
     },
     {
         id: 3,
-
         title: "Cafe Website",
-
-        description: "This is the Clone Web App of the Zomato Web Application. It is also Fully responsive in nature which means It can work perfectly on almost any device regardless of its dimensions and size. Each and every component on this webpage is inspired from the ZOMATO page and created by me.  It can be operated in 2 languages हिंदी and English.",
-
-        shortDescription: 'This is my official portfolio web app, fully responsive and compatible with devices of any size.',
-
+        description: "A modern and responsive cafe website inspired by real-world layouts. Built with HTML, CSS, and Bootstrap, it adapts beautifully across screen sizes and devices.",
+        shortDescription: "This is my official portfolio web app, fully responsive and compatible with devices of any size.",
         images: [Cafe, Cafe2, Cafe3, Cafe4, Cafe5],
-
         category: 'HTML',
-
         github: "https://github.com/Deepansh-Srivastav/Canteen-Website-Project",
-
         visit: "https://gauricafe.netlify.app/",
-
         link: "/project/zomato_landing_page",
-
-        techLogos: [html, css, js, bs , git],
-
+        techLogos: [html, css, js, bs, git],
     },
-]
-
+];
+  
 export {
     projectsData,
     projectHeading
