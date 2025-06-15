@@ -17,9 +17,9 @@ function Hero() {
                     <span style={{ color: '#00FFAA', fontWeight: 'bold' }}>
                         <Typewriter
                             words={['Srivastav']}
-                            loop={0} // 0 = infinite
+                            loop={0}
                             cursor
-                            cursorStyle="_"
+                            cursorStyle="|"
                             typeSpeed={100}
                             deleteSpeed={80}
                             delaySpeed={2000}
