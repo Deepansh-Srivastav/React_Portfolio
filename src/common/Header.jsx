@@ -48,7 +48,7 @@ const Header = () => {
                         </NavLink> */}
 
                         <NavLink
-                            to="/education"
+                            to="/experience"
                             className={({ isActive }) => (isActive ? 'mx-5 clr_white active' : 'mx-5 clr_white')}
                         >
                             Experience

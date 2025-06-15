@@ -37,7 +37,7 @@ const ProjectDisplay = () => {
 
                 <div className="project_navbar_container w-50">
 
-                    <nav className="d-flex justify-content-around align-items-center tabination_navbar w-50" data-aos="fade-down">
+                    <nav className="d-flex justify-content-around align-items-center tabination_navbar w-50" data-aos="fade-up">
 
                         <a
                             href="#"

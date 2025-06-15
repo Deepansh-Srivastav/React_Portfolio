@@ -34,6 +34,19 @@ const projectHeading = {
 
 const projectsData = [
     {
+        id: 0,
+        title: "Zomato Landing Page",
+        description: "A fully responsive clone of Zomato’s landing page supporting English and Hindi. Designed to work seamlessly on all devices with attention to design and structure.",
+        shortDescription: "This is a fully responsive clone of the landing page of Zomato. It supports both Hindi and English languages for a wider audience.",
+        images: [zomato, zomato2, zomato4, zomato3],
+        category: 'HTML',
+        github: "https://github.com/Deepansh-Srivastav/Responsive-Zomato-Clone",
+        visit: "https://deepansh-srivastav.github.io/Responsive-Zomato-Clone/",
+        link: "/project/zomato_landing_page",
+        techLogos: [html, css, js, git, github],
+    },
+
+    {
         id: 1,
         title: "Investment Calculator",
         description: "A React-based investment calculator that helps users estimate future returns. It features an intuitive UI and responsive design, making it user-friendly across all devices.",
@@ -45,6 +58,7 @@ const projectsData = [
         link: "/project/zomato_landing_page",
         techLogos: [react, css, bs, git, azure],
     },
+
     {
         id: 2,
         title: "Portfolio Website",
@@ -57,18 +71,20 @@ const projectsData = [
         link: "/project/zomato_landing_page",
         techLogos: [html, css, js, git, github],
     },
+
     {
-        id: 0,
-        title: "Zomato Landing Page",
-        description: "A fully responsive clone of Zomato’s landing page supporting English and Hindi. Designed to work seamlessly on all devices with attention to design and structure.",
-        shortDescription: "This is a fully responsive clone of the landing page of Zomato. It supports both Hindi and English languages for a wider audience.",
-        images: [zomato, zomato2, zomato4, zomato3],
-        category: 'HTML',
-        github: "https://github.com/Deepansh-Srivastav/Responsive-Zomato-Clone",
-        visit: "https://deepansh-srivastav.github.io/Responsive-Zomato-Clone/",
-        link: "/project/zomato_landing_page",
-        techLogos: [html, css, js, git, github],
+        id: 4,
+        title: "SwiftDrop",
+        description: "A modern and responsive cafe website inspired by real-world layouts. Built with HTML, CSS, and Bootstrap, it adapts beautifully across screen sizes and devices.",
+        shortDescription: "This is my official portfolio web app, fully responsive and compatible with devices of any size.",
+        images: [Cafe, Cafe2, Cafe3, Cafe4, Cafe5],
+        category: 'MERN',
+        github: "https://github.com/Deepansh-Srivastav/SwiftDrop/tree/main/Server",
+        visit: "https://swift-drop.vercel.app/",
+        link: "/project/swiftdrop",
+        techLogos: [html, css, js, bs, git],
     },
+
     {
         id: 3,
         title: "Cafe Website",
@@ -82,7 +98,7 @@ const projectsData = [
         techLogos: [html, css, js, bs, git],
     },
 ];
-  
+
 export {
     projectsData,
     projectHeading
