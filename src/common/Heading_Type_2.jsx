@@ -1,10 +1,10 @@
-const Heading_Type_2 = ({heading, subHeading}) => {
+const Heading_Type_2 = ({ heading, subHeading }) => {
   return (
-    <div className="heading_type_2">
-      <h3 data-aos="fade-down">{heading}</h3>
-      <span data-aos="fade-up">{subHeading}</span>
+    <div className="heading_type_2" data-aos="fade-down">
+      <h3>{heading}</h3>
+      <span style={{color:"white"}}>{subHeading}</span>
     </div>
   )
 }
 
-export default Heading_Type_2
+export default Heading_Type_2;
