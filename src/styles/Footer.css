@@ -1,6 +1,10 @@
-.footer{
-    background: linear-gradient(124.99deg,rgb(97, 75, 195) 13.91%,#f8f68d 127.5%);
-    /* border-top-left-radius:  10px;
-    border-top-right-radius: 10px ; */
+.footer-main {
+    background: rgba(117, 120, 183, 0.85);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(100px);
+    box-shadow: 0 4px 15px rgba(20, 20, 40, 0.3);
+    color: #ffffff;
+    width: 100%;
+    padding: 1.5rem 0;
+    margin-top: 100px;
 }
-
