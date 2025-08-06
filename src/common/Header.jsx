@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import "../styles/Header.css"
 import { NavLink } from 'react-router-dom';
-import { MdOutlineFileDownload } from "react-icons/md";
+import { IoCloudDownloadOutline } from "../assets/icons.js"
 import portfolioLogo from "../assets/Logos/portfolioLogo.png"
 
 const Header = () => {
@@ -56,7 +56,7 @@ const Header = () => {
                     </Nav>
 
                     <a className="d-flex justify-content-center align-items-center download_btn" href='../assets/Resume/Deepansh_Srivastav Resume.pdf'
-                    download="Deepansh_Srivastav Resume.pdf">Resume <MdOutlineFileDownload className='mx-1'/></a>
+                        download="Deepansh_Srivastav Resume.pdf">Resume <IoCloudDownloadOutline className='mx-1'/></a>
 
                 </Navbar.Collapse>
             </Container>

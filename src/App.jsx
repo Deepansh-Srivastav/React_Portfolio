@@ -1,6 +1,7 @@
 import Header from "./common/Header"
 import RouterComponent from "./routes/RouterComponent"
 import "./styles/App.css"
+import "./styles/Theme.css"
 import { useEffect } from "react"
 import Aos from "aos"
 import Footer from "./common/Footer"

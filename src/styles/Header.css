@@ -41,6 +41,7 @@
     transition: background-color 0.3s, transform 0.3s;
     cursor: pointer;
     max-width: 200px;
+    text-decoration: none;
 }
 
 .download_btn svg {
@@ -50,4 +51,5 @@
 .download_btn:hover {
     background-color: #4a3a8c;
     transform: scale(1.05);
+    transition: all 0.4s;
 }
