@@ -7,4 +7,70 @@
     width: 100%;
     padding: 1.5rem 0;
     margin-top: 100px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.socialLinksContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.socialLinks {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.socialLinks:hover {
+    transform: scale(1.2);
+    background-color: rgb(192, 117, 242);
+}
+
+.socialLinks:hover svg {
+    transition: all 0.5s;
+    fill: white;
+    color: white;
+}
+
+@media (max-width: 868px) {
+
+    .footer-desc {
+        font-size: 10px;
+    }
+
+    .socialLinks {
+        height: 28px;
+        width: 28px;
+    }
+
+    .socialLinks svg {
+        font-size: 14px;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+
+
+    .socialLinks {
+        height: 24px;
+        width: 24px;
+    }
+
+    .socialLinks svg {
+        font-size: 12px;
+    }
+
+    .socialLinksContainer{
+        flex-direction: column;
+    }
+
+
 }

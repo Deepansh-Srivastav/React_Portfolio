@@ -1,0 +1,19 @@
+import { FaInstagram, FaLinkedinIn, IoLogoGithub } from "../assets/icons.js"
+
+export const footerSocialLinks = [
+    {
+        id: "linkedin",
+        icon: FaLinkedinIn,
+        url: "https://www.linkedin.com/in/deepansh-srivastav"
+    },
+    {
+        id: "github",
+        icon: IoLogoGithub,
+        url: "https://github.com/Deepansh-Srivastav"
+    },
+    {
+        id: "instagram",
+        icon: FaInstagram,
+        url: "https://www.linkedin.com/in/deepansh-srivastav"
+    },
+];

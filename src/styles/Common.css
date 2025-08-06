@@ -110,19 +110,24 @@
     .heading_type_1 h3,
     .heading_type_2 h3 {
         font-size: 2rem;
+        padding-left: 20px;
         /* Adjust heading for smaller screens */
     }
 
     .heading_type_1 span,
     .heading_type_2 span {
         font-size: 1.2rem;
+padding-left: 20px;
         /* Adjust subheading for smaller screens */
     }
 
     .general_text p {
         font-size: 1rem;
+        padding-left: 20px;
         /* Adjust paragraph text size for smaller screens */
     }
+
+    
 }
 
 @media (max-width: 576px) {
