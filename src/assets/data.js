@@ -17,3 +17,8 @@ export const footerSocialLinks = [
         url: "https://www.instagram.com/sd_1303_/profilecard/?igsh=MWF2Z3E2YWpxYjJwbg=="
     },
 ];
+
+export const experiencePageData = {
+    heading:"My Experience",
+    subHeading:"My Journey So Far"
+}
