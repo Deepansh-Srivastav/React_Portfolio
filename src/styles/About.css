@@ -4,6 +4,12 @@
     border-radius: 10px;
     border: 2px solid white;
 }
+.image_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100;
+}
 
 .about_section {
     background: rgba(255, 255, 255, 0.1);

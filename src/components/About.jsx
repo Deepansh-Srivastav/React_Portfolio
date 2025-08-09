@@ -9,8 +9,8 @@ const About = () => {
   return (
     <section className="about_section">
       <div className="row">
-        <div className="col-12 col-md-6 ">
-          <div className="image_container d-flex flex-row justify-content-center align-items-end" data-aos="fade-right">
+        <div className="col-12 col-md-6">
+          <div className="image_container" data-aos="fade-right">
             <img src={aboutImage} alt="Image Deepansh Srivastav" />
           </div>
         </div>

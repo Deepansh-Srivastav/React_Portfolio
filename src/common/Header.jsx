@@ -8,9 +8,9 @@ import portfolioLogo from "../assets/Logos/portfolioLogo.png"
 
 const Header = () => {
     return (
-        <Navbar expand="lg" className="px-5 clr_purple custom_navbar" data-aos = "fade-down">
+        <Navbar expand="lg" className="px-5 clr_purple custom_navbar" data-aos="fade-down">
             <Container fluid>
-                <NavLink to="/" ><img src={portfolioLogo} alt="Portfolio Icon" className=''/></NavLink>
+                <img src={portfolioLogo} alt="Portfolio Icon" className='nav-logo'/>
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav
@@ -24,6 +24,13 @@ const Header = () => {
                             className={({ isActive }) => (isActive ? 'mx-5 clr_white active' : 'mx-5 clr_white')}
                         >
                             Home
+                        </NavLink>
+
+                        <NavLink
+                            to="/experience"
+                            className={({ isActive }) => (isActive ? 'mx-5 clr_white active' : 'mx-5 clr_white')}
+                        >
+                            Experience
                         </NavLink>
 
                         <NavLink
@@ -47,21 +54,15 @@ const Header = () => {
                             Skills
                         </NavLink> */}
 
-                        <NavLink
-                            to="/experience"
-                            className={({ isActive }) => (isActive ? 'mx-5 clr_white active' : 'mx-5 clr_white')}
-                        >
-                            Experience
-                        </NavLink>
                     </Nav>
 
                     <a className="d-flex justify-content-center align-items-center download_btn" href='../assets/Resume/Deepansh_Srivastav Resume.pdf'
-                        download="Deepansh_Srivastav Resume.pdf">Resume <IoCloudDownloadOutline className='mx-1'/></a>
+                        download="Deepansh_Srivastav Resume.pdf">Resume <IoCloudDownloadOutline className='mx-1' /></a>
 
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-);
+    );
 };
 
 export default Header;
