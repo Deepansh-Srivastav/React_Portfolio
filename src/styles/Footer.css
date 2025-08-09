@@ -1,7 +1,8 @@
 .footer-main {
-    background: rgba(117, 120, 183, 0.85);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(100px);
+    background: rgba(117, 120, 183, 0.1);
+
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 4px 15px rgba(20, 20, 40, 0.3);
     color: #ffffff;
     width: 100%;
@@ -38,9 +39,30 @@
     color: white;
 }
 
+.footer-desc {
+    color: rgb(149, 255, 255);
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.divider {
+    height: 3px;
+    width: 100%;
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0.6),
+            rgba(255, 255, 255, 0));
+    border: none;
+}
+
+
 @media (max-width: 868px) {
 
     .footer-desc {
+        font-size: 10px;
+    }
+
+    .footer_email{
         font-size: 10px;
     }
 
@@ -58,7 +80,6 @@
 
 @media (max-width: 600px) {
 
-
     .socialLinks {
         height: 24px;
         width: 24px;
@@ -68,8 +89,12 @@
         font-size: 12px;
     }
 
-    .socialLinksContainer{
+    .socialLinksContainer {
         flex-direction: column;
+    }
+
+    .footer-social-media-container{
+        margin: 15px 0;
     }
 
 

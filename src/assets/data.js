@@ -14,6 +14,6 @@ export const footerSocialLinks = [
     {
         id: "instagram",
         icon: FaInstagram,
-        url: "https://www.linkedin.com/in/deepansh-srivastav"
+        url: "https://www.instagram.com/sd_1303_/profilecard/?igsh=MWF2Z3E2YWpxYjJwbg=="
     },
 ];

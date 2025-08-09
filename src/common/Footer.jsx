@@ -2,34 +2,54 @@ import '../styles/Footer.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { footerSocialLinks } from '../assets/data.js';
 
-import { FaInstagram, FaLinkedinIn, IoLogoGithub } from "../assets/icons.js"
+import { MdOutlineMail } from "../assets/icons.js"
 
 const Footer = () => {
 
 
   return (
     <footer className="footer-main py-4">
-      <div className="container text-center">
+      <div className="container  d-flex justify-content-center align-items-center flex-column">
 
         {/* <h5 className="footer-title mb-2">Let's Connect</h5> */}
 
         <div className='socialLinksContainer'>
 
-          <p className="footer-desc mb-3">
-            Passionate MERN Stack Developer &middot; Open to Opportunities
-          </p>
+          <div className="footer-social mx-3 mb-3 d-flex justify-content-center align-items-center flex-column">
 
-          <div className="footer-social mx-3 mb-3 d-flex justify-content-center ">
-            {footerSocialLinks?.map((data) => {
-              return <SocialLinkIcon data={data} key={data?.key} />
-            })}
+            <div>
+
+              <p className="footer-desc">
+                Connect with Me Online: Follow!
+              </p>
+
+            </div>
+
+            <div className='d-flex'>
+              {footerSocialLinks?.map((data) => {
+                return <SocialLinkIcon data={data} key={data?.key} />
+              })}
+            </div>
 
           </div>
 
-          <small className="footer-desc mb-3">
-            &copy; {new Date().getFullYear()} Deepansh Srivastav. Built with <span className="footer-tech">React</span> & <span className="footer-tech">Bootstrap</span>.
-          </small>
+          <div className='footer-social-media-container mx-3 mb-3 d-flex justify-content-center align-items-center flex-column '>
+
+            <p className="footer-desc mb-2">
+              Get in Touch via Email
+            </p>
+            <Emails email={"deepansh.engineering03@gmail.com"} />
+          </div>
+
         </div>
+
+        <div className="my-3 divider"></div>
+
+        <small className="footer-desc text-white text-decoration-none">
+          ✦
+          &copy; {new Date().getFullYear()} Deepansh Srivastav. Built with <span className="footer-tech">React</span> & <span className="footer-tech">Bootstrap</span>
+          ✦
+        </small>
 
       </div>
     </footer>
@@ -59,3 +79,19 @@ function SocialLinkIcon({ data }) {
     </>
   );
 };
+
+
+function Emails({ email }) {
+  return (
+    <>
+      <div className='d-flex justify-content-center align-items-center footer_email'>
+
+        <span>
+          <MdOutlineMail fontSize={"16px"} />
+        </span>
+
+        <span className='mx-2 '>{email}</span>
+      </div>
+    </>
+  );
+}
