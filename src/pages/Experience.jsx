@@ -114,24 +114,22 @@ function ExperienceCertificate({ logo, companyName, duration, description, moreL
         <div className="d-flex justify-content-between">
 
           {!isActive && (
-            <Button
-              className="btn-view-certificate"
-              size="sm"
+            <button
+              className='projectButton'
               onClick={() => {
                 handleCertificateImage(certificate);
               }}
             >
               View Certificate
-            </Button>
+            </button>
           )}
 
-          <Button
-            className="btn-see-more"
-            size="sm"
+          <button
+            className='projectButton'
             onClick={() => window.open(moreLink, "_blank")}
           >
             See More
-          </Button>
+          </button>
         </div>
       </div>
 
