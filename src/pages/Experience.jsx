@@ -42,6 +42,16 @@ const Experience = () => {
       </div>
 
       <ExperienceCertificate
+        logo="https://dashboard-internal.unravelapp.com/static/media/logo.8739eb776c97f9ebf4b3.png"
+        companyName="Unravel"
+        duration="Jan 2025 – Present"
+        description="Built and maintained a live real-time dashboard, integrating features such as Google OAuth and other enhancements to improve usability and performance."
+        certificateLink="https://your-certificate-link.com"
+        moreLink="https://your-project-link.com"
+        isActive={true}
+      />
+
+      <ExperienceCertificate
         logo="https://www.bitlyze.com/_next/image/?url=%2Fimages%2Flogo.png&w=1200&q=75"
         companyName="Bitlyze"
         duration="Feb 2024 – July 2024"
@@ -49,16 +59,6 @@ const Experience = () => {
         certificateLink="https://your-certificate-link.com"
         moreLink="https://your-project-link.com"
       />
-
-      <ExperienceCertificate
-        logo="https://dashboard-internal.unravelapp.com/static/media/logo.8739eb776c97f9ebf4b3.png"
-        companyName="Unravel"
-        duration="Jan 2025 – Present"
-        description="Contributed to Bitlyze’s marketing platform by developing reusable UI components and a blog module with full CRUD functionality using REST APIs."
-        certificateLink="https://your-certificate-link.com"
-        moreLink="https://your-project-link.com"
-      />
-
 
     </main>
   );
@@ -70,68 +70,60 @@ export default Experience;
 import { Badge, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-function ExperienceCertificate({ logo, companyName, duration, description, certificateLink, moreLink }) {
+function ExperienceCertificate({ logo, companyName, duration, description, certificateLink, moreLink, isActive = false }) {
   return (
-    <div
-      className="mb-4 p-3 rounded-3"
-      style={{
-        background: "rgba(255, 255, 255, 0.05)",
-        border: "1px solid rgba(255, 255, 255, 0.1)", 
-        boxShadow: "0 4px 20px rgba(101, 148, 131, 0.6)", 
-        color: "#fff",
-        maxWidth:"1100px"
-      }}
-    >
-      <div className="row g-0 align-items-center">
-        {/* Logo Section */}
-        <div className="col-md-2 col-12 text-center p-3">
-          <img
-            src={logo}
-            alt={`${companyName} logo`}
-            className="img-fluid"
+    <div className="experience-card mb-5 mx-3 rounded-3">
+
+      {/* Logo Section */}
+      <div className="p-3 experience-logo-container">
+        <img
+          src={logo}
+          alt={`${companyName} logo`}
+          className="company-logo img-fluid"
+        />
+      </div>
+
+      {/* Content Section */}
+      <div className="col-md-10 col-12 p-4 experience-info-container">
+        <div className="d-flex justify-content-between align-items-center flex-wrap mb-2">
+          <h5 className="mb-0 fw-bold">{companyName}</h5>
+          <Badge
+            bg="success"
             style={{
-              maxHeight: "80px",
-              objectFit: "contain",
-              aspectRatio: "1 / 1"
+              backgroundColor: "rgba(255, 255, 255, 0.2)",
+              color: "#fff",
+              fontWeight: "400"
             }}
-          />
+          >
+            {duration}
+          </Badge>
         </div>
 
-        {/* Content Section */}
-        <div className="col-md-10 col-12">
-          <div className="d-flex justify-content-between align-items-center flex-wrap mb-2">
-            <h5 className="mb-0 fw-bold">{companyName}</h5>
-            <Badge bg="" style={{ backgroundColor: "rgba(255,255,255,0.2)", color: "#fff" }}>
-              {duration}
-            </Badge>
-          </div>
+        <p className="experience-description">{description} </p>
 
-          <p style={{ color: "rgba(255,255,255,0.8)" }}>{description}</p>
+        {/* Buttons */}
+        <div className="d-flex justify-content-between">
 
-          {/* Buttons */}
-          <div className="d-flex justify-content-between">
+          {!isActive && (
             <Button
-              style={{
-                backgroundColor: "#00E0C6",
-                border: "none",
-                color: "#000",
-                fontWeight: "500"
-              }}
+              className="btn-view-certificate"
               size="sm"
               onClick={() => window.open(certificateLink, "_blank")}
             >
               View Certificate
             </Button>
-            <Button
-              variant="outline-light"
-              size="sm"
-              onClick={() => window.open(moreLink, "_blank")}
-            >
-              See More
-            </Button>
-          </div>
+          )}
+
+          <Button
+            className="btn-see-more"
+            size="sm"
+            onClick={() => window.open(moreLink, "_blank")}
+          >
+            See More
+          </Button>
         </div>
       </div>
+
     </div>
   );
 }
