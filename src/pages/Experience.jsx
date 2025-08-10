@@ -1,16 +1,40 @@
 import "../styles/Experience.css";
 import "../styles/About.css";
 import "aos/dist/aos.css";
+import { Badge, Button } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Heading_Type_2 from "../common/Heading_Type_2"
-import { experiencePageData } from "../assets/data";
+import { experiencePageHeadingData, experienceData } from "../assets/data";
+import { useState } from "react";
+import CertificateModal from "../components/CertificateModal";
+
 
 const Experience = () => {
+
+  const [certificateImage, setCertificateImage] = useState(null);
+  const [showModal, setShowModal] = useState(false);
+
+  function handleCertificateImage(image) {
+    setShowModal(true)
+    setCertificateImage(image);
+    return
+
+  }
+
+  function handleClose() {
+    setShowModal(false)
+    setCertificateImage(null);
+    return;
+  }
+
   return (
 
-    <main className="d-flex flex-column justify-content-center align-items-center w-100 main_page_layout">
-
+    <main
+      className={`d-flex flex-column justify-content-center align-items-center w-100 main_page_layout ${showModal ? "main-blur" : ""
+        }`}
+    >
       <div className="custom_margin_extra">
-        <Heading_Type_2 {...experiencePageData} />
+        <Heading_Type_2 {...experiencePageHeadingData} />
       </div>
 
       <section className="about_section">
@@ -41,24 +65,11 @@ const Experience = () => {
         <Heading_Type_2 heading="Verified Credentials" />
       </div>
 
-      <ExperienceCertificate
-        logo="https://dashboard-internal.unravelapp.com/static/media/logo.8739eb776c97f9ebf4b3.png"
-        companyName="Unravel"
-        duration="Jan 2025 – Present"
-        description="Built and maintained a live real-time dashboard, integrating features such as Google OAuth and other enhancements to improve usability and performance."
-        certificateLink="https://your-certificate-link.com"
-        moreLink="https://your-project-link.com"
-        isActive={true}
-      />
+      {experienceData?.map((experienceData, index) => {
+        return <ExperienceCertificate {...experienceData} key={index} handleCertificateImage={handleCertificateImage} />
+      })}
 
-      <ExperienceCertificate
-        logo="https://www.bitlyze.com/_next/image/?url=%2Fimages%2Flogo.png&w=1200&q=75"
-        companyName="Bitlyze"
-        duration="Feb 2024 – July 2024"
-        description="Contributed to Bitlyze’s marketing platform by developing reusable UI components and a blog module with full CRUD functionality using REST APIs."
-        certificateLink="https://your-certificate-link.com"
-        moreLink="https://your-project-link.com"
-      />
+      {showModal && <CertificateModal show={showModal} certificateImage={certificateImage} handleClose={handleClose} />}
 
     </main>
   );
@@ -66,16 +77,14 @@ const Experience = () => {
 
 export default Experience;
 
-
-import { Badge, Button } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-
-function ExperienceCertificate({ logo, companyName, duration, description, certificateLink, moreLink, isActive = false }) {
+function ExperienceCertificate({ logo, companyName, duration, description, moreLink, isActive = false, background = "white", certificate, handleCertificateImage }) {
   return (
     <div className="experience-card mb-5 mx-3 rounded-3">
 
       {/* Logo Section */}
-      <div className="p-3 experience-logo-container">
+      <div className="p-3 experience-logo-container" style={{
+        backgroundColor: background
+      }}>
         <img
           src={logo}
           alt={`${companyName} logo`}
@@ -108,7 +117,9 @@ function ExperienceCertificate({ logo, companyName, duration, description, certi
             <Button
               className="btn-view-certificate"
               size="sm"
-              onClick={() => window.open(certificateLink, "_blank")}
+              onClick={() => {
+                handleCertificateImage(certificate);
+              }}
             >
               View Certificate
             </Button>
