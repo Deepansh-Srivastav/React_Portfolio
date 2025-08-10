@@ -1,7 +1,6 @@
 import Card from 'react-bootstrap/Card';
 import "../styles/Card.css"
 
-// FOR SWIPER
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
@@ -32,9 +31,9 @@ const ProjectCard = ({
                 <p className="shortDescription">{shortDescription}</p>
 
                 <div className="buttons">
-                    <a href={visit} target="_blank" rel="noopener noreferrer"><button>Visit</button></a>
-                    <button className="mx-1">Read More</button>
-                    <a href={github} target="_blank" rel="noopener noreferrer"><button>Github</button></a>
+                    <a href={visit} target="_blank" rel="noopener noreferrer" ><button className='projectButton'>Visit</button></a>
+                    <button className="projectButton mx-1">Read More</button>
+                    <a href={github} target="_blank" rel="noopener noreferrer"><button className='projectButton'>Github</button></a>
                 </div>
             </div>
         </div>

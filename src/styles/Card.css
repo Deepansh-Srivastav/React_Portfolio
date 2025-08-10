@@ -8,7 +8,7 @@
     margin-bottom: 100px;
     position: relative;
     /* background-color: red; */
-    
+
 }
 
 .thumbnail {
@@ -19,7 +19,7 @@
     border-radius: 8px;
 }
 
-.description{
+.description {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,7 +57,7 @@
     bottom: 0;
 }
 
-.buttons button {
+.projectButton {
     background: #ffffff10;
     color: #FFFA8D;
     text-decoration: none;
@@ -69,7 +69,7 @@
     border: 1px solid #FFFA8D;
 }
 
-.buttons button:hover {
+.projectButton:hover {
     background: #FFFA8D;
     /* background: #bcf7f7; */
     color: black;
