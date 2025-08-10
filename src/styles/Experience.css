@@ -1,3 +1,9 @@
+
+.main-blur {
+    filter: blur(20px);
+    /* transition: filter 0.3s ease; */
+}
+
 .experience-card {
     display: flex;
     border-radius: 10px;
@@ -11,12 +17,13 @@
 }
 
 .experience-logo-container {
-    background-color: white;
     border-right: 5px solid teal;
     width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
+    backdrop-filter: blur(200px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .experience-info-container {
@@ -66,21 +73,21 @@
         max-width: 500px;
     }
 
-        .experience-logo-container {
-            background-color: white;
-            border-right: none;
-            /* border-bottom: 5px solid teal; */
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    
-        .experience-info-container {
-            width: 100%;
-            background: rgba(117, 120, 183, 0.1);
-            backdrop-filter: blur(200px);
-            -webkit-backdrop-filter: blur(10px);
-        }
+    .experience-logo-container {
+        background-color: white;
+        border-right: none;
+        /* border-bottom: 5px solid teal; */
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .experience-info-container {
+        width: 100%;
+        background: rgba(117, 120, 183, 0.1);
+        backdrop-filter: blur(200px);
+        -webkit-backdrop-filter: blur(10px);
+    }
 
 }
