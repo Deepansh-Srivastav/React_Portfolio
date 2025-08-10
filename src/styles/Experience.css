@@ -1,0 +1,86 @@
+.experience-card {
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(150, 166, 142, 0.4);
+    box-shadow: 0 4px 20px rgba(60, 61, 61, 0.6);
+    color: #fff;
+    max-width: 1100px;
+}
+
+.experience-logo-container {
+    background-color: white;
+    border-right: 5px solid teal;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-info-container {
+    width: 80%;
+    background: rgba(117, 120, 183, 0.1);
+    backdrop-filter: blur(200px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.company-logo {
+    max-height: 100px;
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
+}
+
+.badge.experience-badge {
+    background-color: rgba(132, 64, 64, 0.2);
+    color: #fff;
+}
+
+
+.experience-description {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-view-certificate {
+    background-color: #00e0c6;
+    border: none;
+    color: #000;
+    font-weight: 500;
+}
+
+.btn-see-more {
+    border-color: #fff;
+    color: #fff;
+}
+
+.btn-see-more:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+
+@media (max-width: 770px) {
+
+    .experience-card {
+        flex-direction: column;
+        max-width: 500px;
+    }
+
+        .experience-logo-container {
+            background-color: white;
+            border-right: none;
+            /* border-bottom: 5px solid teal; */
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .experience-info-container {
+            width: 100%;
+            background: rgba(117, 120, 183, 0.1);
+            backdrop-filter: blur(200px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+}
