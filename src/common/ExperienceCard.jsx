@@ -9,7 +9,10 @@ export default function ExperienceCard({
     isActive = false,
     background = "white",
     certificate,
-    handleCertificateImage }) {
+    handleCertificateImage,
+    type = "experience"
+
+}) {
 
     return (
         <div className="experience-card mb-5 mx-3 rounded-3" data-aos="fade-up">
@@ -55,7 +58,7 @@ export default function ExperienceCard({
                                 handleCertificateImage(certificate);
                             }}
                         >
-                            View Certificate
+                            {type === "experience" ? "View Certificate" : "View Degree"}
                         </button>
                     )}
 

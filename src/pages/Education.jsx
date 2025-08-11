@@ -1,9 +1,26 @@
 import { useState } from 'react'
 import Heading_Type_2 from '../common/Heading_Type_2';
+import ExperienceCard from '../common/ExperienceCard';
+import { EducationData } from '../data/data.js';
+import CertificateModal from '../common/CertificateModal.jsx';
 
 const Education = () => {
 
+    const [certificateImage, setCertificateImage] = useState(null);
     const [showModal, setShowModal] = useState(false);
+
+    function handleCertificateImage(image) {
+        setShowModal(true)
+        setCertificateImage(image);
+        return
+
+    }
+
+    function handleClose() {
+        setShowModal(false)
+        setCertificateImage(null);
+        return;
+    }
 
     return (
         <main className={`d-flex flex-column justify-content-center align-items-center w-100 main_page_layout ${showModal ? "main-blur" : ""
@@ -33,6 +50,23 @@ const Education = () => {
                     </div>
                 </div>
             </section>
+
+            <Heading_Type_2 heading="Education " />
+            <div className="my-5">
+                {EducationData?.map((experienceData, index) => {
+                    return <ExperienceCard  {...experienceData} key={index} handleCertificateImage={handleCertificateImage} />
+                })}
+            </div>
+
+            <Heading_Type_2 heading="Additional Learning " />
+            <div className="my-5">
+                {EducationData?.map((experienceData, index) => {
+                    return <ExperienceCard  {...experienceData} key={index} handleCertificateImage={handleCertificateImage} />
+                })}
+            </div>
+
+
+            {showModal && <CertificateModal show={showModal} certificateImage={certificateImage} handleClose={handleClose} />}
 
 
         </main>
