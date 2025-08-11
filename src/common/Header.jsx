@@ -3,14 +3,14 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import "../styles/Header.css"
 import { NavLink } from 'react-router-dom';
-import { IoCloudDownloadOutline } from "../assets/icons.js"
+import { IoCloudDownloadOutline } from "../data/icons.js"
 import portfolioLogo from "../assets/Logos/portfolioLogo.png"
 
 const Header = () => {
     return (
         <Navbar expand="lg" className="px-5 clr_purple custom_navbar" data-aos="fade-down">
             <Container fluid>
-                <img src={portfolioLogo} alt="Portfolio Icon" className='nav-logo'/>
+                <img src={portfolioLogo} alt="Portfolio Icon" className='nav-logo' />
                 <Navbar.Toggle aria-controls="navbarScroll" />
                 <Navbar.Collapse id="navbarScroll">
                     <Nav

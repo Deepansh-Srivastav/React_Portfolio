@@ -19,11 +19,28 @@ const About = () => {
           <div className="py-5" data-aos="fade-left">
             <Heading_Type_1 {...aboutSectionHeadingData} />
             <div className="general_text">
+
               <p>
-                Hello! I&apos;m Deepansh Srivastav, a dedicated Frontend Developer with over 10 months of real-world experience in building responsive and user-centric web applications using React.js. I specialize in creating clean, performant, and accessible interfaces that enhance user experience and bring designs to life.<br /><br />
-                With a strong foundation in modern frontend technologies and a continuous drive to stay updated with industry trends, I strive to craft scalable and maintainable solutions. <br /><br />
-                I&apos;m  passionate about transforming ideas into interactive digital experiences and always eager to collaborate, innovate, and grow in this ever-evolving tech landscape.
+                Hello! I&apos;m <span className="highlighter">Deepansh Srivastav</span>, a dedicated
+                <span className="highlighter"> Frontend Developer</span> with over
+                <span className="highlighter"> 10+ months of real-world experience</span> in building
+                responsive and user-centric web applications using
+                <span className="highlighter"> React.js</span>,
+                <span className="highlighter"> JavaScript (ES6+)</span>,
+                I specialize in creating clean, performant, and accessible interfaces that enhance user experience and bring designs to life.
+                <br /><br />
+                With a strong foundation in modern frontend technologies and a continuous drive to stay updated with industry trends, I strive to craft
+                <span className="highlighter"> scalable</span> and
+                <span className="highlighter"> maintainable solutions</span>.
+                <br /><br />
+                I&apos;m passionate about transforming ideas into
+                <span className="highlighter"> interactive digital experiences</span> and always eager to
+                <span className="highlighter"> collaborate</span>,
+                <span className="highlighter"> innovate</span>, and
+                <span className="highlighter"> grow</span> in this ever-evolving tech landscape.
               </p>
+
+
 
             </div>
           </div>

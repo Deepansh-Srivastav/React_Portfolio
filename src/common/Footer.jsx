@@ -1,8 +1,8 @@
 import '../styles/Footer.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { footerSocialLinks } from '../assets/data.js';
+import { footerSocialLinks } from '../data/data.js';
 
-import { MdOutlineMail } from "../assets/icons.js"
+import { MdOutlineMail } from "../data/icons.js"
 
 const Footer = () => {
 

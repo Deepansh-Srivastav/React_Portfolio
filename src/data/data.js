@@ -1,4 +1,4 @@
-import { FaInstagram, FaLinkedinIn, IoLogoGithub } from "../assets/icons.js"
+import { FaInstagram, FaLinkedinIn, IoLogoGithub } from "./icons.js"
 
 import BitlyzeCeritifcate from "../assets/Certificates/Bitlyze.png"
 import ProDevCertificate from "../assets/Certificates/Prodev.png"
@@ -35,7 +35,7 @@ export const experienceData = [
             "Built and maintained a live real-time dashboard, integrating features such as Google OAuth and other enhancements to improve usability and performance.",
         moreLink: null,
         certificate: null,
-        isActive: true
+        isActive: true,
     },
     {
         logo: "https://www.bitlyze.com/_next/image/?url=%2Fimages%2Flogo.png&w=1200&q=75",
