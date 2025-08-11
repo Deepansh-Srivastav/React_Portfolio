@@ -15,11 +15,6 @@ const ProjectCard = ({
     techLogos,
 }) => {
 
-    function handleClick() {
-        alert(title);
-
-    }
-
     return (
         <div className="projectCard" data-aos="fade-up">
             <div className="thumbnail">

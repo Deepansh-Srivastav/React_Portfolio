@@ -10,9 +10,9 @@ export default function ExperienceCard({
     background = "white",
     certificate,
     handleCertificateImage }) {
-        
+
     return (
-        <div className="experience-card mb-5 mx-3 rounded-3">
+        <div className="experience-card mb-5 mx-3 rounded-3" data-aos="fade-up">
 
             <div className="p-3 experience-logo-container" style={{
                 backgroundColor: background

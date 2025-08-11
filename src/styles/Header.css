@@ -3,8 +3,8 @@
 } */
 
 .custom_navbar {
-    background: rgba(97, 75, 195, 0.3);
-    backdrop-filter: blur(8px);
+    background-color: var(--secondary-theme-color);
+    backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
     width: 100%;
@@ -28,12 +28,12 @@
 }
 
 .active {
-    color: cyan !important;
+    color: #FF8040 !important;
 }
 
 .download_btn {
 
-    background-color: #9683e0;
+    background-color: var(--main-theme-color);
     color: white;
     border: none;
     padding: 10px 20px;
