@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="footer-main py-4">
       <div className="container  d-flex justify-content-center align-items-center flex-column">
 
-        {/* <h5 className="footer-title mb-2">Let's Connect</h5> */}
+        <h5 className="footer-title mb-4 footer-desc text-decoration-none">Let's Connect</h5>
 
         <div className='socialLinksContainer'>
 

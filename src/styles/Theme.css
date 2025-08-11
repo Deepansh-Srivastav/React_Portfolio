@@ -5,8 +5,8 @@ a {
 :root {
 
     --highlighter-color: cyan;
-    --secondary-color: #1a1a1a;
-    --text-light: rgba(255, 255, 255, 0.8);
+    --main-theme-color: rgb(35, 154, 162);
+    --secondary-theme-color: #2399a27a;
 
 }
 
