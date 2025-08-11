@@ -59,3 +59,17 @@ export const experienceData = [
         isActive: false
     }
 ];
+
+export const EducationData = [
+    {
+        logo: "https://www.abesit.in/wp-content/themes/abesit/images/logo.png",
+        background: "transparent",
+        companyName: "B.Tech, CSE(AI)",
+        duration: "Nov 2020 – July 2024",
+        description: "Completed Bachelor of Technology in Computer Science (AI) from ABESIT, gaining a strong foundation in software development, programming, and problem-solving.",
+        moreLink: null,
+        certificate: BitlyzeCeritifcate,
+        type:"education"
+    }
+
+]
