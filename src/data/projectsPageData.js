@@ -29,7 +29,7 @@ import github from "../assets/Logos/github.png"
 
 const projectHeading = {
     heading: "My Projects",
-    subHeading: "Showcasing Creativity"
+    subHeading: "From Concept to Code"
 }
 
 const projectsData = [

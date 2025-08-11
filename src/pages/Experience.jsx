@@ -1,12 +1,12 @@
 import "../styles/Experience.css";
 import "../styles/About.css";
 import "aos/dist/aos.css";
-import { Badge, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Heading_Type_2 from "../common/Heading_Type_2"
-import { experiencePageHeadingData, experienceData } from "../assets/data";
+import { experiencePageHeadingData, experienceData } from "../data/data.js";
 import { useState } from "react";
-import CertificateModal from "../components/CertificateModal";
+import CertificateModal from "../common/CertificateModal";
+import ExperienceCard from "../common/ExperienceCard.jsx";
 
 
 const Experience = () => {
@@ -66,7 +66,7 @@ const Experience = () => {
       </div>
 
       {experienceData?.map((experienceData, index) => {
-        return <ExperienceCertificate {...experienceData} key={index} handleCertificateImage={handleCertificateImage} />
+        return <ExperienceCard  {...experienceData} key={index} handleCertificateImage={handleCertificateImage} />
       })}
 
       {showModal && <CertificateModal show={showModal} certificateImage={certificateImage} handleClose={handleClose} />}
@@ -76,63 +76,3 @@ const Experience = () => {
 };
 
 export default Experience;
-
-function ExperienceCertificate({ logo, companyName, duration, description, moreLink, isActive = false, background = "white", certificate, handleCertificateImage }) {
-  return (
-    <div className="experience-card mb-5 mx-3 rounded-3">
-
-      {/* Logo Section */}
-      <div className="p-3 experience-logo-container" style={{
-        backgroundColor: background
-      }}>
-        <img
-          src={logo}
-          alt={`${companyName} logo`}
-          className="company-logo img-fluid"
-        />
-      </div>
-
-      {/* Content Section */}
-      <div className="col-md-10 col-12 p-4 experience-info-container">
-        <div className="d-flex justify-content-between align-items-center flex-wrap mb-2">
-          <h5 className="mb-0 fw-bold">{companyName}</h5>
-          <Badge
-            bg="success"
-            style={{
-              backgroundColor: "rgba(255, 255, 255, 0.2)",
-              color: "#fff",
-              fontWeight: "400"
-            }}
-          >
-            {duration}
-          </Badge>
-        </div>
-
-        <p className="experience-description">{description} </p>
-
-        {/* Buttons */}
-        <div className="d-flex justify-content-between">
-
-          {!isActive && (
-            <button
-              className='projectButton'
-              onClick={() => {
-                handleCertificateImage(certificate);
-              }}
-            >
-              View Certificate
-            </button>
-          )}
-
-          <button
-            className='projectButton'
-            onClick={() => window.open(moreLink, "_blank")}
-          >
-            See More
-          </button>
-        </div>
-      </div>
-
-    </div>
-  );
-}
