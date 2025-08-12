@@ -1,7 +1,16 @@
-import { FaInstagram, FaLinkedinIn, IoLogoGithub } from "./icons.js"
+import {
+    FaInstagram,
+    FaLinkedinIn,
+    IoLogoGithub,
+    AiFillHome,
+    FaGraduationCap,
+    IoIosBriefcase,
+    FaProjectDiagram,
+} from "./icons.js"
 
 import BitlyzeCeritifcate from "../assets/Certificates/Bitlyze.png"
 import ProDevCertificate from "../assets/Certificates/Prodev.png"
+
 
 export const footerSocialLinks = [
     {
@@ -69,7 +78,34 @@ export const EducationData = [
         description: "Completed Bachelor of Technology in Computer Science (AI) from ABESIT, gaining a strong foundation in software development, programming, and problem-solving.",
         moreLink: null,
         certificate: BitlyzeCeritifcate,
-        type:"education"
+        type: "education"
     }
 
 ]
+
+export const SidenavMenuUtils = [
+    {
+        id: "home",
+        label: "Home",
+        path: "/",
+        icon: AiFillHome,
+    },
+    {
+        id: "experience",
+        label: "Experience",
+        path: "/experience",
+        icon: IoIosBriefcase,
+    },
+    {
+        id: "projects",
+        label: "Projects",
+        path: "/projects",
+        icon: FaProjectDiagram,
+    },
+    {
+        id: "education",
+        label: "Education",
+        path: "/education",
+        icon: FaGraduationCap,
+    },
+];

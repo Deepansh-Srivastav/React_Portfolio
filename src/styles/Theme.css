@@ -8,6 +8,7 @@ a {
     --main-theme-color: rgb(35, 154, 162);
     --secondary-theme-color: #2399a27a;
 
+    --active-theme: #FF8040
 }
 
 .highlighter {

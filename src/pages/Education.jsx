@@ -65,9 +65,7 @@ const Education = () => {
                 })}
             </div>
 
-
             {showModal && <CertificateModal show={showModal} certificateImage={certificateImage} handleClose={handleClose} />}
-
 
         </main>
     )
