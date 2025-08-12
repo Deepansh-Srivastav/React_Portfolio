@@ -4,7 +4,8 @@ import Navbar from 'react-bootstrap/Navbar';
 import "../styles/Header.css"
 import { NavLink } from 'react-router-dom';
 import { IoCloudDownloadOutline } from "../data/icons.js"
-import portfolioLogo from "../assets/Logos/portfolioLogo.png"
+import portfolioLogo from "../assets/Logos/portfolio_logo.png"
+// import portfolioLogo from "../assets/Logos/portfolioLogo.png"
 
 const Header = () => {
     return (
