@@ -1,9 +1,8 @@
-import React from 'react'
-import "../styles/SideNav.css"
-import { SidenavMenuUtils } from '../data/data.js'
-import { useNavigate, useLocation } from 'react-router-dom'
-import { portfolioLogo } from '../data/images.js'
-import { MdDescription } from "../data/icons.js"
+import "../styles/SideNav.css";
+import { SidenavMenuUtils } from '../data/data.js';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { portfolioLogo } from '../data/images.js';
+import { MdDescription } from "../data/icons.js";
 
 const Sidenav = () => {
 
@@ -22,10 +21,9 @@ const Sidenav = () => {
                 <MdDescription />
             </div>
 
-
         </nav>
     )
-}
+};
 
 export default Sidenav;
 
@@ -45,4 +43,4 @@ function StyledSidenavItem({ item }) {
             </div >
         </>
     );
-}
+};

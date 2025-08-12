@@ -6,8 +6,11 @@ import { useEffect } from "react"
 import Aos from "aos"
 import Footer from "./common/Footer"
 import Sidenav from "./common/Sidenav"
+import useDeviceType from "./hooks/useDeviceType.js"
 
 const App = () => {
+
+  const { isMobile, isTablet, isLargeScreen } = useDeviceType();
 
   useEffect(() => {
     Aos.init({
@@ -16,8 +19,8 @@ const App = () => {
   })
   return (
     <main className="position-absolute w-100">
-      <Header />
-      <Sidenav />
+      {isLargeScreen && <Header />}
+      {(isMobile || isTablet) && <Sidenav />}
       <RouterComponent />
       <Footer />
     </main>
