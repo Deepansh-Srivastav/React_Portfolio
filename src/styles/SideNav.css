@@ -45,3 +45,8 @@
 .sideNavActive {
     background-color: teal;
 }
+
+
+@media (max-width: 700px) {
+
+}
