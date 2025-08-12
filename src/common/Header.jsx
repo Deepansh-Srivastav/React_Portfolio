@@ -56,7 +56,7 @@ const Header = () => {
 
                     </Nav>
 
-                    <a className="d-flex justify-content-center align-items-center download_btn" href='../assets/Resume/Deepansh_Srivastav Resume.pdf'
+                    <a className="d-flex justify-content-center align-items-center download_btn" target='blank' href='https://drive.google.com/file/d/1eDWUNn2VfVVtzFJOhf56FLd4NzbcgOSy/view?usp=sharing'
                         download="Deepansh_Srivastav Resume.pdf">Resume <IoCloudDownloadOutline className='mx-1' /></a>
 
                 </Navbar.Collapse>

@@ -13,8 +13,8 @@ function Hero() {
                 </div>
 
                 <h2>
-                    Hi <span className="wave">👋🏻</span>, I'm Deepansh{' '}
-                    <span style={{ color: '#00FFAA', fontWeight: 'bold' }}>
+                    Hi, I'm Deepansh{' '}
+                    <span style={{ color: 'var(--main-theme-color)', fontWeight: 'bold' }}>
                         <Typewriter
                             words={['Srivastav']}
                             loop={0}
