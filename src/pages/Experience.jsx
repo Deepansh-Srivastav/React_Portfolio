@@ -37,11 +37,11 @@ const Experience = () => {
         <Heading_Type_2 {...experiencePageHeadingData} />
       </div>
 
-      <section className="about_section">
+      <section className="about_section ">
         <div className="row">
-          <div className="col-12 col-md-6 ">
-            <div className="image_container d-flex flex-row justify-content-center align-items-end" data-aos="fade-right">
-              <img src={"https://images.unsplash.com/photo-1541560052-5e137f229371?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} alt="Experience Image" />
+          <div className="col-12 col-md-6 d-flex justify-content-center align-item-center">
+            <div className="image_container" data-aos="fade-right">
+              <img src={"https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} alt="Experience Image" />
             </div>
           </div>
 

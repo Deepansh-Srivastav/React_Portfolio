@@ -17,7 +17,12 @@ const Sidenav = () => {
                 return <StyledSidenavItem item={menuItem} key={menuItem?.id || index} />
             })}
 
-            <div className='sideNavPortfolioLogo border-0 sideNavItem sidenavResumeButton'>
+            <div
+                className='sideNavPortfolioLogo border-0 sideNavItem sidenavResumeButton'
+                onClick={() => {
+                    window.open("https://drive.google.com/file/d/1eDWUNn2VfVVtzFJOhf56FLd4NzbcgOSy/view?usp=sharing", "_blank");
+                }}
+            >
                 <MdDescription />
             </div>
 
