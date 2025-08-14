@@ -43,6 +43,9 @@ import pf4 from "../assets/Project_Images/Portfolio/pf4.png"
 import SD1 from "../assets/Project_Images/Swiftdrop/SD1.png"
 import SD2 from "../assets/Project_Images/Swiftdrop/SD2.png"
 
+
+import hero_image from "../assets/Images/me-green.png"
+
 export {
     portfolioLogo,
     BitlyzeCeritifcate,
@@ -80,4 +83,5 @@ export {
     pf4,
     SD1,
     SD2,
+    hero_image,
 };
