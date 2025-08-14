@@ -9,7 +9,6 @@ import { IoIosBriefcase } from "react-icons/io";
 import { FaProjectDiagram } from "react-icons/fa";
 import { MdDescription } from "react-icons/md";
 
-
 export {
     IoCloudDownloadOutline,
     FaInstagram,

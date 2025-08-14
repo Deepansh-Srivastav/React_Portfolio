@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Heading_Type_2 from '../common/Heading_Type_2';
 import ExperienceCard from '../common/ExperienceCard';
-import { EducationData } from '../data/data.js';
+import { EducationData, CertificationData } from '../data/data.js';
 import CertificateModal from '../common/CertificateModal.jsx';
 
 const Education = () => {
@@ -12,8 +12,7 @@ const Education = () => {
     function handleCertificateImage(image) {
         setShowModal(true)
         setCertificateImage(image);
-        return
-
+        return;
     }
 
     function handleClose() {
@@ -60,7 +59,7 @@ const Education = () => {
 
             <Heading_Type_2 heading="Additional Learning " />
             <div className="my-5">
-                {EducationData?.map((experienceData, index) => {
+                {CertificationData?.map((experienceData, index) => {
                     return <ExperienceCard  {...experienceData} key={index} handleCertificateImage={handleCertificateImage} />
                 })}
             </div>
