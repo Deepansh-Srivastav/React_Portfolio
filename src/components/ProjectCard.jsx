@@ -1,10 +1,8 @@
-import Card from 'react-bootstrap/Card';
 import "../styles/Card.css"
-
-import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
-
+import Card from 'react-bootstrap/Card';
 
 const ProjectCard = ({
     title,
@@ -25,6 +23,12 @@ const ProjectCard = ({
                 <h3 className="title">{title}</h3>
                 <p className="shortDescription">{shortDescription}</p>
 
+                <div className='techLogos'>
+                    {techLogos?.map((logo, index) => (
+                        <img key={index} src={logo} alt="Tech Logo" className="tech-logo" />
+                    ))}
+                </div>
+
                 <div className="buttons">
                     <a href={visit} target="_blank" rel="noopener noreferrer" ><button className='projectButton'>Visit</button></a>
                     <button className="projectButton mx-1">Read More</button>
@@ -32,12 +36,10 @@ const ProjectCard = ({
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default ProjectCard
-
-
+export default ProjectCard;
 
 function Thumbnail({ images }) {
     return (
@@ -61,4 +63,4 @@ function Thumbnail({ images }) {
             ))}
         </Swiper>
     );
-}
+};

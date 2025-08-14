@@ -8,9 +8,14 @@ import {
     FaProjectDiagram,
 } from "./icons.js"
 
-import BitlyzeCeritifcate from "../assets/Certificates/Bitlyze.png"
-import ProDevCertificate from "../assets/Certificates/Prodev.png"
-
+import {
+    BitlyzeCeritifcate,
+    ProDevCertificate,
+    Degree,
+    Git_Github,
+    Cetpa,
+    Web_dev
+} from "../data/images.js"
 
 export const footerSocialLinks = [
     {
@@ -77,10 +82,39 @@ export const EducationData = [
         duration: "Nov 2020 – July 2024",
         description: "Completed Bachelor of Technology in Computer Science (AI) from ABESIT, gaining a strong foundation in software development, programming, and problem-solving.",
         moreLink: null,
-        certificate: BitlyzeCeritifcate,
+        certificate: Degree,
         type: "education"
     }
+];
 
+export const CertificationData = [
+    {
+        logo: "https://www.cetpainfotech.com/wp-content/uploads/2024/01/cetpa-logo.png",
+        background: "white",
+        companyName: "React.js Training",
+        duration: "2023",
+        description: "Completed a 1-week hands-on React.js training at CETPA, covering core concepts, component-based architecture, state management, and building interactive web applications.",
+        moreLink: null,
+        certificate: Cetpa,
+    },
+    {
+        logo: "https://frontends.udemycdn.com/frontends-homepage/staticx/udemy/images/v7/logo-udemy.svg",
+        background: "white",
+        companyName: "Web-Development Course",
+        duration: "2023",
+        description: "Completed an online course from UDEMY, covering modern web development fundamentals, including responsive design with CSS & Bootstrap, DOM manipulation, and interactive web applications using JavaScript.",
+        moreLink: null,
+        certificate: Web_dev,
+    },
+    {
+        logo: "https://frontends.udemycdn.com/frontends-homepage/staticx/udemy/images/v7/logo-udemy.svg",
+        background: "white",
+        companyName: "Git-Github Course",
+        duration: "2023",
+        description: "Completed a course from UDEMY that covered version control with Git, collaborative workflows on GitHub, and Markdown for project documentation.",
+        moreLink: null,
+        certificate: Git_Github,
+    },
 ]
 
 export const SidenavMenuUtils = [

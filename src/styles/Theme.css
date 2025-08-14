@@ -7,6 +7,7 @@ a {
     --highlighter-color: cyan;
     --main-theme-color: rgb(35, 154, 162);
     --secondary-theme-color: #2399a27a;
+    --button-theme-yellow: hsl(57, 100%, 78%);
 
     --active-theme: #FF8040
 }
