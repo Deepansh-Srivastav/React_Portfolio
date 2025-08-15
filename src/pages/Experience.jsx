@@ -7,6 +7,7 @@ import { experiencePageHeadingData, experienceData } from "../data/data.js";
 import { useState } from "react";
 import CertificateModal from "../common/CertificateModal";
 import ExperienceCard from "../common/ExperienceCard.jsx";
+import { experienceImage } from "../data/images.js";
 
 
 const Experience = () => {
@@ -41,7 +42,7 @@ const Experience = () => {
         <div className="row">
           <div className="col-12 col-md-6 d-flex justify-content-center align-item-center">
             <div className="image_container" data-aos="fade-right">
-              <img src={"https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} alt="Experience Image" />
+              <img src={experienceImage} alt="Experience Image" />
             </div>
           </div>
 
@@ -50,9 +51,33 @@ const Experience = () => {
               {/* <Heading_Type_1 {...experiencePage} /> */}
               <div className="general_text">
                 <p>
-                  Hi! I&apos;m Deepansh Srivastav, a Frontend Developer with hands-on experience in building responsive, user-focused web applications. Over the past year, I’ve worked on real-world projects and internships with organizations like Unravel and Bitlyze, contributing to performance optimization, API integrations, and reusable UI components.<br /><br />
-                  My work spans across React.js, JavaScript, HTML5, CSS3, Bootstrap, and Material UI — creating clean, scalable, and maintainable solutions. I’m passionate about translating ideas into interactive, accessible digital experiences.<br /><br />
-                  I believe in continuous learning and collaboration, striving to make every project impactful and user-friendly.
+                  Hi! I&apos;m <span className="highlighter">Deepansh Srivastav</span>, a
+                  <span className="highlighter"> Frontend Developer</span> with hands-on experience
+                  in building <span className="highlighter">responsive</span>,
+                  <span className="highlighter"> user-focused</span> web applications.
+                  Over the past year, I’ve worked on <span className="highlighter">real-world projects</span>
+                  and <span className="highlighter">internships</span> with organizations like
+                  <span className="highlighter"> Unravel</span> and
+                  <span className="highlighter"> Bitlyze</span>, contributing to
+                  <span className="highlighter"> performance optimization</span>,
+                  <span className="highlighter"> API integrations</span>, and
+                  <span className="highlighter"> reusable UI components</span>.<br /><br />
+
+                  My work spans across <span className="highlighter">React.js</span>,
+                  <span className="highlighter"> JavaScript</span>,
+                  <span className="highlighter"> HTML5</span>,
+                  <span className="highlighter"> CSS3</span>,
+                  <span className="highlighter"> Bootstrap</span>, and
+                  <span className="highlighter"> Material UI</span> — creating
+                  <span className="highlighter"> clean</span>,
+                  <span className="highlighter"> scalable</span>, and
+                  <span className="highlighter"> maintainable solutions</span>.
+                  I’m passionate about translating ideas into
+                  <span className="highlighter"> interactive</span>,
+                  <span className="highlighter"> accessible</span> digital experiences.<br /><br />
+
+                  I believe in <span className="highlighter">continuous learning </span>
+                  and <span className="highlighter">collaboration</span>, striving to make eve.
                 </p>
               </div>
             </div>

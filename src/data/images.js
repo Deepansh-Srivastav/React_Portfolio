@@ -35,6 +35,12 @@ import pf4 from "../assets/Project_Images/Portfolio/pf4.png"
 import SD1 from "../assets/Project_Images/Swiftdrop/SD1.png"
 import SD2 from "../assets/Project_Images/Swiftdrop/SD2.png"
 import hero_image from "../assets/Images/me-green.png"
+import unravel from "../assets/Logos/unravel.png"
+import abesit from "../assets/Logos/abesit.png"
+import bitlyze from "../assets/Logos/bitlyze.png"
+import udemy from "../assets/Logos/udemy.png"
+import cetpaLogo from "../assets/Logos/cetpa.png"
+import experienceImage from "../assets/Images/experience.jpg"
 
 export {
     portfolioLogo,
@@ -74,4 +80,10 @@ export {
     SD1,
     SD2,
     hero_image,
+    unravel,
+    abesit,
+    bitlyze,
+    udemy,
+    cetpaLogo,
+    experienceImage,
 };

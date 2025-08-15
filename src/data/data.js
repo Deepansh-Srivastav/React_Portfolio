@@ -14,7 +14,12 @@ import {
     Degree,
     Git_Github,
     Cetpa,
-    Web_dev
+    Web_dev,
+    unravel,
+    abesit,
+    bitlyze,
+    udemy,
+    cetpaLogo,
 } from "../data/images.js"
 
 export const footerSocialLinks = [
@@ -42,7 +47,7 @@ export const experiencePageHeadingData = {
 
 export const experienceData = [
     {
-        logo: "https://dashboard-internal.unravelapp.com/static/media/logo.8739eb776c97f9ebf4b3.png",
+        logo: unravel,
         companyName: "Unravel",
         duration: "Jan 2025 – Present",
         description:
@@ -52,17 +57,18 @@ export const experienceData = [
         isActive: true,
     },
     {
-        logo: "https://www.bitlyze.com/_next/image/?url=%2Fimages%2Flogo.png&w=1200&q=75",
+        logo: bitlyze,
         companyName: "Bitlyze",
+        background: "transparent",
         duration: "Feb 2024 – July 2024",
         description:
             "Contributed to Bitlyze’s marketing platform by developing reusable UI components and a blog module with full CRUD functionality using REST APIs.",
         moreLink: null,
         certificate: BitlyzeCeritifcate,
-        isActive: false
+        isActive: false,
     },
     {
-        logo: "https://www.abesit.in/wp-content/themes/abesit/images/logo.png",
+        logo: abesit,
         background: "transparent",
         companyName: "ABESIT",
         duration: "July 2023 - Aug 2023",
@@ -76,7 +82,7 @@ export const experienceData = [
 
 export const EducationData = [
     {
-        logo: "https://www.abesit.in/wp-content/themes/abesit/images/logo.png",
+        logo: abesit,
         background: "transparent",
         companyName: "B.Tech, CSE(AI)",
         duration: "Nov 2020 – July 2024",
@@ -89,7 +95,7 @@ export const EducationData = [
 
 export const CertificationData = [
     {
-        logo: "https://www.cetpainfotech.com/wp-content/uploads/2024/01/cetpa-logo.png",
+        logo: cetpaLogo,
         background: "white",
         companyName: "React.js Training",
         duration: "2023",
@@ -98,7 +104,7 @@ export const CertificationData = [
         certificate: Cetpa,
     },
     {
-        logo: "https://frontends.udemycdn.com/frontends-homepage/staticx/udemy/images/v7/logo-udemy.svg",
+        logo: udemy,
         background: "white",
         companyName: "Web-Development Course",
         duration: "2023",
@@ -107,7 +113,7 @@ export const CertificationData = [
         certificate: Web_dev,
     },
     {
-        logo: "https://frontends.udemycdn.com/frontends-homepage/staticx/udemy/images/v7/logo-udemy.svg",
+        logo: udemy,
         background: "white",
         companyName: "Git-Github Course",
         duration: "2023",
