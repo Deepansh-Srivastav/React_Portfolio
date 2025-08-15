@@ -15,7 +15,7 @@ import {
     Git_Github,
     Cetpa,
     Web_dev,
-    // unravel,
+    unravel,
     abesit,
     bitlyze,
     udemy,
@@ -47,7 +47,7 @@ export const experiencePageHeadingData = {
 
 export const experienceData = [
     {
-        logo: "unravel",
+        logo: unravel,
         companyName: "Unravel",
         duration: "Jan 2025 – Present",
         description:
