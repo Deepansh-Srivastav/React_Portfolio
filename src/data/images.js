@@ -35,7 +35,7 @@ import pf4 from "../assets/Project_Images/Portfolio/pf4.png";
 import SD1 from "../assets/Project_Images/Swiftdrop/SD1.png";
 import SD2 from "../assets/Project_Images/Swiftdrop/SD2.png";
 import hero_image from "../assets/Images/me-green.png";
-import unravel from "../assets/Logos/Unravel.png";
+import unravel from "../assets/Logos/temp.png";
 import abesit from "../assets/Logos/abesit.png";
 import bitlyze from "../assets/Logos/bitlyze.png";
 import udemy from "../assets/Logos/udemy.png";
