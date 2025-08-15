@@ -19,31 +19,21 @@ import git from "../assets/Logos/git.png"
 import github from "../assets/Logos/github.png"
 import mongoIcon from "../assets/Logos/mongo.png"
 import muiIcon from "../assets/Logos/mui.png"
-
-// Zomato Project Image Import 
 import zomato from "../assets/Project_Images/Zomato/zomato1.png"
 import zomato2 from "../assets/Project_Images/Zomato/zomato2.png"
 import zomato3 from "../assets/Project_Images/Zomato/zomato3.png"
 import zomato4 from "../assets/Project_Images/Zomato/zomato4.png"
-
-// ZomCafeato Project Image Import 
 import Cafe from "../assets/Project_Images/Cafe/cafe1.png"
 import Cafe2 from "../assets/Project_Images/Cafe/cafe2.png"
 import Cafe3 from "../assets/Project_Images/Cafe/cafe3.png"
 import Cafe4 from "../assets/Project_Images/Cafe/cafe4.png"
 import Cafe5 from "../assets/Project_Images/Cafe/cafe5.png"
-
-// Portfolio Project Image Import 
 import pf from "../assets/Project_Images/Portfolio/pf1.png"
 import pf2 from "../assets/Project_Images/Portfolio/pf2.png"
 import pf3 from "../assets/Project_Images/Portfolio/pf3.png"
 import pf4 from "../assets/Project_Images/Portfolio/pf4.png"
-
-// Swiftdrop Image Import 
 import SD1 from "../assets/Project_Images/Swiftdrop/SD1.png"
 import SD2 from "../assets/Project_Images/Swiftdrop/SD2.png"
-
-
 import hero_image from "../assets/Images/me-green.png"
 
 export {
