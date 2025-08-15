@@ -41,6 +41,7 @@ import bitlyze from "../assets/Logos/bitlyze.png"
 import udemy from "../assets/Logos/udemy.png"
 import cetpaLogo from "../assets/Logos/cetpa.png"
 import experienceImage from "../assets/Images/experience.jpg"
+import educationImage from "../assets/Images/education.jpg"
 
 export {
     portfolioLogo,
@@ -86,4 +87,5 @@ export {
     udemy,
     cetpaLogo,
     experienceImage,
+    educationImage,
 };

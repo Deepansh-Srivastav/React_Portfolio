@@ -3,6 +3,7 @@ import Heading_Type_2 from '../common/Heading_Type_2';
 import ExperienceCard from '../common/ExperienceCard';
 import { EducationData, CertificationData } from '../data/data.js';
 import CertificateModal from '../common/CertificateModal.jsx';
+import { educationImage } from '../data/images.js';
 
 const Education = () => {
 
@@ -33,7 +34,7 @@ const Education = () => {
                 <div className="row">
                     <div className="col-12 col-md-6  d-flex justify-content-center align-item-center">
                         <div className="image_container " data-aos="fade-right">
-                            <img src={"https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"} alt="Experience Image" />
+                            <img src={educationImage} alt="Experience Image" />
                         </div>
                     </div>
 

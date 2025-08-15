@@ -9,7 +9,6 @@ import CertificateModal from "../common/CertificateModal";
 import ExperienceCard from "../common/ExperienceCard.jsx";
 import { experienceImage } from "../data/images.js";
 
-
 const Experience = () => {
 
   const [certificateImage, setCertificateImage] = useState(null);
@@ -18,8 +17,7 @@ const Experience = () => {
   function handleCertificateImage(image) {
     setShowModal(true)
     setCertificateImage(image);
-    return
-
+    return;
   }
 
   function handleClose() {
