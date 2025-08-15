@@ -19,6 +19,5 @@ export {
     FaGraduationCap,
     IoIosBriefcase,
     FaProjectDiagram,
-    MdDescription
-
-}
+    MdDescription,
+};
