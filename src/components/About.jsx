@@ -1,4 +1,3 @@
-import "../styles/About.css";
 import aboutImage from "../assets/Images/image.png";
 import { aboutSectionHeadingData } from "../data/homePageData";
 import Heading_Type_1 from "../common/Heading_Type_1";

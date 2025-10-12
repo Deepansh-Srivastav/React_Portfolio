@@ -1,5 +1,4 @@
 import "../styles/Experience.css";
-import "../styles/About.css";
 import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Heading_Type_2 from "../common/Heading_Type_2"
