@@ -5,28 +5,27 @@
     background-color: var(--secondary-theme-color);
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 2), 
-                0 6px 6px rgba(0, 0, 0, 0.15);
+    box-shadow:
+        0 10px 20px rgba(0, 0, 0, 2),
+        0 6px 6px rgba(0, 0, 0, 0.15);
     position: relative;
+
+    img {
+        width: 100%;
+        max-width: 200px;
+        pointer-events: none;
+    }
 }
 
-
-.img_container img{
-    width: 100%;
-    max-width: 200px;
-    pointer-events: none;
-} 
-.custom_margin{
+.custom_margin {
     margin-top: 5rem !important;
     margin-bottom: 3rem !important;
 }
 
 .hero_section h2 {
-    font-size: clamp(1rem, 1.5vw + 1rem, 2rem); 
-    line-height: 1.2; 
+    font-size: clamp(1rem, 1.5vw + 1rem, 2rem);
+    line-height: 1.2;
     font-weight: bold;
-    color: white; 
+    color: white;
     margin-top: 20px;
-    /* box-shadow: 0 6px 6px rgba(0, 0, 0, 0.15); */
 }
-
