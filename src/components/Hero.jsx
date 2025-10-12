@@ -1,4 +1,4 @@
-import "../styles/Hero.css";
+
 import "../styles/Common.css";
 import {hero_image} from "../data/images.js"
 import 'bootstrap-icons/font/bootstrap-icons.css';
