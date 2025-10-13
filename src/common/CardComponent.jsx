@@ -1,5 +1,4 @@
 import Card from 'react-bootstrap/Card';
-import "../styles/Card.css"
 import PropTypes from 'prop-types';
 
 // FOR SWIPER
