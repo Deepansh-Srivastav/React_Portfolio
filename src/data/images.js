@@ -1,5 +1,6 @@
 import portfolioLogo from "../assets/Logos/portfolio_logo.png";
 import BitlyzeCeritifcate from "../assets/Certificates/Bitlyze.png";
+import UnravelCeritifcate from "../assets/Certificates/Unravel.png";
 import ProDevCertificate from "../assets/Certificates/Prodev.png";
 import Degree from "../assets/Certificates/Degree.png";
 import Git_Github from "../assets/Certificates/Git-Github.png";
@@ -46,6 +47,7 @@ import educationImage from "../assets/Images/education.jpg";
 export {
     portfolioLogo,
     BitlyzeCeritifcate,
+    UnravelCeritifcate,
     ProDevCertificate,
     Degree,
     Git_Github,

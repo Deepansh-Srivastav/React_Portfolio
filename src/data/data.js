@@ -10,6 +10,7 @@ import {
 
 import {
     BitlyzeCeritifcate,
+    UnravelCeritifcate,
     ProDevCertificate,
     Degree,
     Git_Github,
@@ -49,12 +50,12 @@ export const experienceData = [
     {
         logo: unravel,
         companyName: "Unravel",
-        duration: "Jan 2025 – Present",
+        duration: "Jan 2025 – Jul 2025",
         description:
             "Built and maintained a live real-time dashboard, integrating features such as Google OAuth and other enhancements to improve usability and performance.",
         moreLink: null,
-        certificate: null,
-        isActive: true,
+        certificate: UnravelCeritifcate,
+        isActive: false,
     },
     {
         logo: bitlyze,
